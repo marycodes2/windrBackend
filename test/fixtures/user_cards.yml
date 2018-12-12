@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  cards: one
+  users: one
+  start_time: 2018-12-12 10:15:21
+  completed: false
+  expired: false
+
+two:
+  cards: two
+  users: two
+  start_time: 2018-12-12 10:15:21
+  completed: false
+  expired: false
