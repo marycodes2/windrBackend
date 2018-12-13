@@ -9,8 +9,10 @@ class Api::V1::UserCardsController < ApplicationController
   def update
     @user_card.update(user_card_params)
     if @user_card.save
+      puts "saved"
       render json: @user_card, status: :accepted
     else
+      puts "didn't save"
       render json: { errors: @user_card.errors.full_messages }, status: :unprocessible_entity
     end
   end
@@ -20,14 +22,18 @@ class Api::V1::UserCardsController < ApplicationController
     render json: @user_card
   end
 
-  def show
+  def new
+    @user_card = UserCard.new
+  end
 
+  def show
+    render json: @user_card
   end
 
   private
 
   def user_card_params
-    params.permit(:card_id, :user_id, :completed, :expired)
+    params.require(:user_card).permit(:card_id, :user_id, :completed, :expired)
   end
 
   def find_user_card

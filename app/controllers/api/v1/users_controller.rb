@@ -1,5 +1,5 @@
 class Api::V1::UsersController < ApplicationController
-  before_action :find_user, only: [:update]
+  before_action :find_user, only: [:update, :show]
 
   def index
     @users = User.all
@@ -15,10 +15,19 @@ class Api::V1::UsersController < ApplicationController
     end
   end
 
+  def create
+    @user = User.create(user_params)
+    render json: @user
+  end
+
+  def show
+    render json: @user
+  end
+
   private
 
   def user_params
-    params.permit(:name, :access_type)
+    params.require(:user).permit(:name, :access_type)
   end
 
   def find_user

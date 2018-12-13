@@ -18,7 +18,7 @@ class Api::V1::CardsController < ApplicationController
   private
 
   def card_params
-    params.permit(:co2_savings, :dollar_savings, :upfront_cost, :score, :name, :description)
+    params.require(:card).permit(:co2_savings, :dollar_savings, :upfront_cost, :score, :name, :description)
   end
 
   def find_card
