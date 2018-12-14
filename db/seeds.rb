@@ -27,5 +27,5 @@ card2.save
 card3 = Card.new(co2_savings:4000, dollar_savings:2000, upfront_cost:10000, score:15000, name: "Go Solar TWO", description:"Install solar panels on your roof", image:"https://3j06nmm5imf1ft0bmf8gu416-wpengine.netdna-ssl.com/wp-content/uploads/2017/01/AdobeStock_109126620-1.jpeg")
 card3.save
 
-user_card = UserCard.new(card_id:5, user_id:1, completed:false, expired:false)
-user_card.save
+# user_card = UserCard.new(card_id:5, user_id:1, completed:false, expired:false)
+# user_card.save
