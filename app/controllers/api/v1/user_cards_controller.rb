@@ -1,5 +1,5 @@
 class Api::V1::UserCardsController < ApplicationController
-  before_action :find_user_card, only: [:update, :show]
+  before_action :find_user_card, only: [:update, :show, :edit]
 
   def index
     @user_cards = UserCard.all
@@ -15,6 +15,9 @@ class Api::V1::UserCardsController < ApplicationController
       puts "didn't save"
       render json: { errors: @user_card.errors.full_messages }, status: :unprocessible_entity
     end
+  end
+
+  def edit
   end
 
   def create
@@ -33,7 +36,7 @@ class Api::V1::UserCardsController < ApplicationController
   private
 
   def user_card_params
-    params.require(:user_card).permit(:card_id, :user_id, :completed, :expired)
+    params.require(:user_card).permit(:card_id, :user_id, :completed, :expired, :liked)
   end
 
   def find_user_card
