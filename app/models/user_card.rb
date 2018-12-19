@@ -6,7 +6,7 @@ class UserCard < ApplicationRecord
 
   def self.mark_cards_expired
     user_cards = UserCard.all.each do |userCard|
-      if (userCard.created_at.advance(hours: 48) < DateTime.now)
+      if (userCard.created_at.advance(minutes: 1) < DateTime.now)
         userCard.expired = true
         userCard.save
       end
