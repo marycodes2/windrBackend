@@ -4,5 +4,13 @@ class UserCard < ApplicationRecord
   belongs_to :card
   belongs_to :user
 
+  def self.mark_cards_expired
+    user_cards = UserCard.all.each do |userCard|
+      if (userCard.created_at.advance(hours: 48) < DateTime.now)
+        userCard.expired = true
+        userCard.save
+      end
+    end
+  end
 
 end

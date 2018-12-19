@@ -1,5 +1,6 @@
 class Api::V1::UserCardsController < ApplicationController
   before_action :find_user_card, only: [:update, :show, :edit]
+  before_action :timer
 
   def index
     @user_cards = UserCard.all
@@ -41,5 +42,9 @@ class Api::V1::UserCardsController < ApplicationController
 
   def find_user_card
     @user_card = UserCard.find(params[:id])
+  end
+
+  def timer
+    UserCard.mark_cards_expired
   end
 end
