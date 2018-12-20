@@ -18,16 +18,19 @@ class Api::V1::UsersController < ApplicationController
   end
 
   def profile
-    render json: { user: UserSerializer.new(current_user) }, status: :accepted
+    token = request.headers['Authentication'].split(' ')[1]
+    payload = decode(token)
+    current_user = User.find(payload["user_id"])
+    render json: { user: current_user }, status: :accepted
   end
 
   def create
     @user = User.create(user_params)
     if @user.valid?
       @token = encode_token(user_id: @user.id)
-      render json: { user: UserSerializer.new(@user), jwt: @token }, status: :created
+      render json: { user: UserSerializer.new(@user), jwt: @token, error: false }, status: :created
     else
-      render json: { error: 'failed to create user' }, status: :not_acceptable
+      render json: { error: true}, status: :not_acceptable
     end
   end
 

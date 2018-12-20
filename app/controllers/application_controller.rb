@@ -40,6 +40,10 @@ class ApplicationController < ActionController::API
     !!current_user
   end
 
+  def decode(token)
+    JWT.decode(token, 'my_s3cr3t', true, {algorithm:'HS256'})[0]
+  end
+
 
   def authorized
 
