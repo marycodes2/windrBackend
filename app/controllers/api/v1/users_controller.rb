@@ -21,7 +21,11 @@ class Api::V1::UsersController < ApplicationController
     token = request.headers['Authentication'].split(' ')[1]
     payload = decode(token)
     current_user = User.find(payload["user_id"])
-    render json: { user: current_user }, status: :accepted
+    if current_user
+      render json: { user: current_user }, status: :accepted
+    else
+      render json: {error: true}
+    end 
   end
 
   def create
