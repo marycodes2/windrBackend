@@ -10,13 +10,13 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2018_12_19_180355) do
+ActiveRecord::Schema.define(version: 2018_12_28_000819) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
   create_table "cards", force: :cascade do |t|
-    t.integer "co2_savings"
+    t.integer "stars"
     t.integer "dollar_savings"
     t.integer "upfront_cost"
     t.integer "score"
@@ -47,6 +47,8 @@ ActiveRecord::Schema.define(version: 2018_12_19_180355) do
     t.string "username"
     t.string "password_digest"
     t.string "avatar"
+    t.integer "zipcode"
+    t.integer "upgraded_bulbs"
   end
 
   add_foreign_key "user_cards", "cards"

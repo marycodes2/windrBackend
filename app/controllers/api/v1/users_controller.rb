@@ -25,7 +25,7 @@ class Api::V1::UsersController < ApplicationController
       render json: { user: current_user }, status: :accepted
     else
       render json: {error: true}
-    end 
+    end
   end
 
   def create
@@ -45,7 +45,7 @@ class Api::V1::UsersController < ApplicationController
   private
 
   def user_params
-    params.require(:user).permit(:name, :access_type, :username, :password, :avatar)
+    params.require(:user).permit(:name, :zipcode, :access_type, :username, :password, :avatar)
   end
 
   def find_user
