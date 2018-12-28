@@ -8,7 +8,7 @@ mary = User.new(name:"Mary", access_type:"user")
 mary.save
 
 
-bulbs = Card.new(stars:1, dollar_savings:4, upfront_cost:6, score:200, name: "ENERGY STAR Light Bulb", description:"Replace incandescent light bulbs in your house with ENERGY STAR bulbs", image:"ledBulb")
+bulbs = Card.new(stars:1, dollar_savings:4, upfront_cost:1, score:200, name: "ENERGY STAR Light Bulb", description:"Replace incandescent light bulbs in your house with ENERGY STAR bulbs", image:"ledBulb")
 bulbs.save
 #
 # card2 = Card.new(co2_savings:200, dollar_savings:100, upfront_cost:50, score:100, name: "ENERGY STAR Windows", description:"Replace windows with ENERGY STAR windows", image: "windows")
