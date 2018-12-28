@@ -37,7 +37,7 @@ class Api::V1::UserCardsController < ApplicationController
   private
 
   def user_card_params
-    params.require(:user_card).permit(:card_id, :user_id, :completed, :expired, :liked)
+    params.require(:user_card).permit(:card_id, :user_id, :completed, :expired, :liked, :total_windr_score, :total_dollar_savings)
   end
 
   def find_user_card

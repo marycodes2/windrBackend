@@ -17,11 +17,11 @@ windows.save
 fridge = Card.new(stars:1, dollar_savings:38, upfront_cost:2, score:200, name: "Energy Efficient Refrigerator", description:"Replace your old refrigerator with an energy efficient refrigerator", image:"fridge")
 fridge.save
 
+car = Card.new(stars:2, dollar_savings:10, upfront_cost:0, score:30, name: "Drive Less", description:"Reduce the number of miles you drive your car by over 10 miles this week", image:"biking")
+car.save
 
-
-
-
-
+computer = Card.new(stars:1, dollar_savings:13, upfront_cost:0, score:20, name: "Enable Sleep Mode", description:"Enable sleep mode on your computer and/or monitor", image:"computer")
+computer.save
 
 #
 # card2 = Card.new(co2_savings:200, dollar_savings:100, upfront_cost:50, score:100, name: "ENERGY STAR Windows", description:"Replace windows with ENERGY STAR windows", image: "windows")
