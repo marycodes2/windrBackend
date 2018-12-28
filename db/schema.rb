@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2018_12_28_000819) do
+ActiveRecord::Schema.define(version: 2018_12_28_005724) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -49,6 +49,7 @@ ActiveRecord::Schema.define(version: 2018_12_28_000819) do
     t.string "avatar"
     t.integer "zipcode"
     t.integer "upgraded_bulbs"
+    t.integer "score"
   end
 
   add_foreign_key "user_cards", "cards"
