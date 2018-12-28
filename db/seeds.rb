@@ -14,6 +14,8 @@ bulbs.save
 windows = Card.new(stars:2, dollar_savings:325, upfront_cost:2, score:500, name: "Energy Efficient Windows", description:"Replace single pane windows in your home with energy efficient windows", image:"windows")
 windows.save
 
+fridge = Card.new(stars:1, dollar_savings:38, upfront_cost:2, score:200, name: "Energy Efficient Refrigerator", description:"Replace your old refrigerator with an energy efficient refrigerator", image:"fridge")
+fridge.save
 
 
 
