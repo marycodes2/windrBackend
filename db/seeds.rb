@@ -7,7 +7,6 @@
 mary = User.new(name:"Mary", access_type:"user")
 mary.save
 
-
 bulbs = Card.new(stars:1, dollar_savings:4, upfront_cost:1, score:20, name: "Energy Efficienct Light Bulb", description:"Replace incandescent light bulbs in your house with efficient, LED bulbs.", image:"ledBulb")
 bulbs.save
 
@@ -31,6 +30,28 @@ winter_heat.save
 
 clean_power = Card.new(stars:5, dollar_savings:0, upfront_cost:2, score:250, name: "Purchase Clean Power", description:"Purchase clean energy from your utility or a third-party distributor.", image:"green_power")
 clean_power.save
+
+cold_water_washer =  Card.new(stars:1, dollar_savings:1.2, upfront_cost:0, score:40, name: "Wash Clothes in Cold Water", description:"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.", image:"cold_clothes")
+cold_water_washer.save
+
+programmable_thermostat = Card.new(stars:4, dollar_savings:110, upfront_cost:3, score:300, name: "Buy Programmable Thermostat", description:"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.", image:"nest")
+programmable_thermostat.save
+
+air_leaks = Card.new(stars:3, dollar_savings:220, upfront_cost:3, score:220, name: "Seal Air Leaks and Properly Insulate House", description:"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.", image:"air_leaks")
+air_leaks.save
+
+summer_ac = Card.new(stars:2, dollar_savings:3, upfront_cost:0, score:40, name: "Turn up thermostat during summer months", description:"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.", image:"thermostat_up")
+summer_ac.save
+
+recycle = Card.new(stars:2, dollar_savings:0, upfront_cost:0, score:100, name: "Recycle", description:"Recycle all recyclables, including batteries and magazines... Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.", image:"recycle")
+recycle.save
+
+water_heater_thermostat = Card.new(stars:1, dollar_savings:2, upfront_cost:0, score:30, name: "Lower Water Heater Thermostat", description:"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.", image:"water_heater")
+water_heater_thermostat.save
+
+
+
+
 
 
 
