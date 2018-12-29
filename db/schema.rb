@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2018_12_29_153425) do
+ActiveRecord::Schema.define(version: 2018_12_29_175050) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -53,9 +53,10 @@ ActiveRecord::Schema.define(version: 2018_12_29_153425) do
     t.integer "upgraded_bulbs"
     t.integer "score"
     t.integer "upgraded_windows"
-    t.integer "upgraded_refrigerators"
     t.integer "driving_miles_saved_in_week"
     t.integer "num_sleep_monitors"
+    t.integer "degrees_decreased_winter"
+    t.integer "degrees_increased_summer"
   end
 
   add_foreign_key "user_cards", "cards"
