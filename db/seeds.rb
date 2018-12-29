@@ -23,6 +23,18 @@ car.save
 computer = Card.new(stars:1, dollar_savings:13, upfront_cost:0, score:20, name: "Enable Sleep Mode", description:"Enable sleep mode on your computer and/or monitor", image:"computer")
 computer.save
 
+trash = Card.new(stars:3, dollar_savings:0, upfront_cost:0, score:120, name: "No Trash for Three Days", description:"Refrain from creating any trash for three days!", image:"no_trash")
+trash.save
+
+winter_heat = Card.new(stars:2, dollar_savings:3, upfront_cost:0, score:40, name: "Turn Down Thermostat", description:"Turn down your thermostat during the winter months.", image:"thermostat_down")
+winter_heat.save
+
+clean_power = Card.new(stars:5, dollar_savings:0, upfront_cost:2, score:250, name: "Purchase Clean Power", description:"Purchase clean energy from your utility or a third-party distributor.", image:"green_power")
+clean_power.save
+
+
+
+
 #
 # card2 = Card.new(co2_savings:200, dollar_savings:100, upfront_cost:50, score:100, name: "ENERGY STAR Windows", description:"Replace windows with ENERGY STAR windows", image: "windows")
 # card2.save
