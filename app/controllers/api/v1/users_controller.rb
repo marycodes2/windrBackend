@@ -45,7 +45,7 @@ class Api::V1::UsersController < ApplicationController
   private
 
   def user_params
-    params.require(:user).permit(:id, :upgraded_bulbs, :upgraded_windows, :driving_miles_saved_in_week, :num_sleep_monitors, :degrees_decreased_winter, :degrees_increased_summer, :name, :zipcode, :access_type, :username, :password, :avatar, :score)
+    params.require(:user).permit(:id, :first_time_user, :upgraded_bulbs, :upgraded_windows, :driving_miles_saved_in_week, :num_sleep_monitors, :degrees_decreased_winter, :degrees_increased_summer, :name, :zipcode, :access_type, :username, :password, :avatar, :score)
   end
 
   def find_user

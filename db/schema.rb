@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2018_12_29_175050) do
+ActiveRecord::Schema.define(version: 2018_12_30_031428) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -57,6 +57,7 @@ ActiveRecord::Schema.define(version: 2018_12_29_175050) do
     t.integer "num_sleep_monitors"
     t.integer "degrees_decreased_winter"
     t.integer "degrees_increased_summer"
+    t.boolean "first_time_user"
   end
 
   add_foreign_key "user_cards", "cards"

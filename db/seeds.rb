@@ -10,7 +10,7 @@ mary.save
 bulbs = Card.new(stars:1, dollar_savings:4, upfront_cost:1, score:20, name: "Energy Efficienct Light Bulb", description:"Replace incandescent light bulbs in your house with efficient, LED bulbs.", image:"ledBulb")
 bulbs.save
 
-windows = Card.new(stars:4, dollar_savings:325, upfront_cost:2, score:500, name: "Energy Efficient Windows", description:"Replace single pane windows in your home with energy efficient windows", image:"windows")
+windows = Card.new(stars:4, dollar_savings:325, upfront_cost:3, score:500, name: "Energy Efficient Windows", description:"Replace single pane windows in your home with energy efficient windows", image:"windows")
 windows.save
 
 fridge = Card.new(stars:1, dollar_savings:38, upfront_cost:2, score:200, name: "Energy Efficient Refrigerator", description:"Replace your old refrigerator with an energy efficient refrigerator", image:"fridge")
@@ -48,28 +48,3 @@ recycle.save
 
 water_heater_thermostat = Card.new(stars:1, dollar_savings:42, upfront_cost:0, score:30, name: "Lower Water Heater Thermostat to 120 Degrees", description:" Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.", image:"water_heater")
 water_heater_thermostat.save
-
-
-
-
-
-
-
-
-#
-# card2 = Card.new(co2_savings:200, dollar_savings:100, upfront_cost:50, score:100, name: "ENERGY STAR Windows", description:"Replace windows with ENERGY STAR windows", image: "windows")
-# card2.save
-#
-# card3 = Card.new(co2_savings:4000, dollar_savings:2000, upfront_cost:10000, score:15000, name: "Go Solar", description:"Install solar panels on your roof", image:"solar")
-# card3.save
-#
-# card1 = Card.new(co2_savings:33, dollar_savings:4, upfront_cost:6, score:200, name: "ENERGY STAR Light Bulb TWO", description:"Replace incandescent light bulbs in your house with ENERGY STAR bulbs", image:"ledBulb")
-# card1.save
-#
-# card2 = Card.new(co2_savings:200, dollar_savings:100, upfront_cost:50, score:100, name: "ENERGY STAR Windows TWO", description:"Replace windows with ENERGY STAR windows", image:"windows")
-# card2.save
-#
-# card3 = Card.new(co2_savings:4000, dollar_savings:2000, upfront_cost:10000, score:15000, name: "Go Solar TWO", description:"Install solar panels on your roof", image:"solar")
-# card3.save
-# user_card = UserCard.new(card_id:5, user_id:1, completed:false, expired:false)
-# user_card.save
