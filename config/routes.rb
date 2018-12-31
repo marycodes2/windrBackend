@@ -2,7 +2,7 @@ Rails.application.routes.draw do
 
   namespace :api do
     namespace :v1 do
-      resources :users, only: [:index, :update, :show, :create, :edit]
+      resources :users, only: [:index, :update, :show, :create, :edit, :new]
       get '/profile', to: 'users#profile'
       resources :cards, only: [:index, :update]
       resources :user_cards, only: [:index, :update, :create, :show, :edit, :new]
