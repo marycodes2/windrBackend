@@ -3,14 +3,13 @@
 #
 # Examples:
 
-
 mary = User.new(name:"Mary", access_type:"user")
 mary.save
 
 bulbs = Card.new(stars:1, dollar_savings:4, upfront_cost:1, score:20, name: "Buy Energy Efficienct Light Bulbs", description:"Replacing incandescent light bulbs in your house with efficient, LED bulbs is an easy, inexpensive way to save energy. Plus, wave constantly replacing bulbs goodbye: the average LED life expectancy is 14 years!", image:"ledBulb")
 bulbs.save
 
-windows = Card.new(stars:4, dollar_savings:325, upfront_cost:3, score:500, name: "Energy Efficient Windows", description:"Keep your home warm and efficient by replacing old windows with their energy efficient counterparts. Replacing one window could save you $350 annually!", image:"windows")
+windows = Card.new(stars:4, dollar_savings:325, upfront_cost:3, score:400, name: "Energy Efficient Windows", description:"Keep your home warm and efficient by replacing old windows with their energy efficient counterparts. Replacing one window could save you $350 annually!", image:"windows")
 windows.save
 
 fridge = Card.new(stars:1, dollar_savings:38, upfront_cost:2, score:200, name: "Energy Efficient Refrigerator", description:"Flip your old, energy guzzling refrigerator for a newer, efficient model and enjoy a more efficient product that could save you $270 over the next five years!", image:"fridge")
@@ -43,8 +42,14 @@ air_leaks.save
 summer_ac = Card.new(stars:2, dollar_savings:3, upfront_cost:0, score:40, name: "Turn up thermostat during summer months", description:" cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.", image:"thermostat_up")
 summer_ac.save
 
-recycle = Card.new(stars:3, dollar_savings:0, upfront_cost:0, score:100, name: "Recycle", description:"Recycle all recyclables, including batteries and magazines...  pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.", image:"recycle")
+recycle = Card.new(stars:3, dollar_savings:0, upfront_cost:0, score:100, name: "Recycle", description:"Recycle all recyclables, including batteries and magazines for ", image:"recycle")
 recycle.save
 
 water_heater_thermostat = Card.new(stars:1, dollar_savings:42, upfront_cost:0, score:30, name: "Lower Water Heater Thermostat to 120 Degrees", description:" Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.", image:"water_heater")
 water_heater_thermostat.save
+
+solar = Card.new(stars:5, dollar_savings:858, upfront_cost:5, score:1000, name: "Install solar panels on your home", description:"Do it!", image:"solar")
+solar.save
+
+peak = Card.new(stars:3, dollar_savings:0, upfront_cost:0, score:300, name:"Avoid Peak Load", description: "Refrain from using heavy appliances such as electric vehicle supply equipment, clothes washers, pool pumps between 12pm-6pm to avoid consuming during peak load", image:"peak")
+peak.save
