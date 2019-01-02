@@ -12,7 +12,7 @@ bulbs.save
 windows = Card.new(stars:3, dollar_savings:325, upfront_cost:3, score:180, name: "Energy Efficient Windows", description:"Keep your home warm and efficient by replacing old windows with their energy efficient counterparts. Replacing one window could save you $350 annually!", image:"windows")
 windows.save
 
-fridge = Card.new(stars:2, dollar_savings:38, upfront_cost:2, score:120, name: "Energy Efficient Refrigerator", description:"Flip your old, energy guzzling refrigerator for a newer, efficient model and enjoy a more efficient product that could save you $270 over the next five years!", image:"fridge")
+fridge = Card.new(stars:2, dollar_savings:38, upfront_cost:2, score:120, name: "Energy Efficient Refrigerator", description:"Flip your old, energy guzzling refrigerator for a new, efficient model and enjoy a more efficient product that could save you $270 over the next five years!", image:"fridge")
 fridge.save
 
 car = Card.new(stars:2, dollar_savings:10, upfront_cost:0, score:100, name: "Drive Less", description:"Help the environment and your six-pack this season by biking to work instead of driving. Burn 750 calories and 0 fossil fuels before coffee with this mood-boosting commute.", image:"biking")
