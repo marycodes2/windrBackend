@@ -6,7 +6,7 @@
 mary = User.new(name:"Mary", access_type:"user")
 mary.save
 
-bulbs = Card.new(stars:1, dollar_savings:4, upfront_cost:1, score:20, name: "Energy Efficienct Light Bulbs", description:"Replacing incandescent light bulbs in your house with efficient, LED bulbs is an easy, inexpensive way to save $4/year/bulb!. Wave constantly replacing burnt-out bulbs goodbye: the average LED life expectancy is 14 years!", image:"ledBulb")
+bulbs = Card.new(stars:1, dollar_savings:4, upfront_cost:1, score:20, name: "Energy Efficienct Light Bulbs", description:"Replacing incandescent light bulbs in your house with efficient, LED bulbs is an easy, inexpensive way to save $4/year/bulb! Wave constantly replacing burnt-out bulbs goodbye: the average LED life expectancy is 14 years!", image:"ledBulb")
 bulbs.save
 
 windows = Card.new(stars:3, dollar_savings:325, upfront_cost:3, score:180, name: "Energy Efficient Windows", description:"Keep your home warm and efficient by replacing old windows with their energy efficient counterparts. Replacing one window could save you $350 annually!", image:"windows")
