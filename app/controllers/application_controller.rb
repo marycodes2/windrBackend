@@ -1,5 +1,5 @@
 class ApplicationController < ActionController::API
-  # before_action :authorized
+  before_action :authorized
 
 # purpose: guven a payload, return a token
   def encode_token(payload)
